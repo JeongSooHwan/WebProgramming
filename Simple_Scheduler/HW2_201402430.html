@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>TODO in HTML5 Skeleton</title>
+<!-- CSS, JS External 정의 -->
+<link rel="stylesheet" type="text/css" href="HW2_201402430.css">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="HW2_201402430.js"></script>
+</head>
+
+
+<body onload="firstScreen()">
+	<header>
+		<input type="button" id="AddBtn" value="Add Todo" onClick="clickATD()">
+		<span></span>
+		<div id="daylistdiv">
+			<select name="day" id="daylist">
+				<option value="day">day</option>
+				<option value="Mon">Monday</option>
+				<option value="Tue">Tuesday</option>
+				<option value="Wed">Wednesday</option>
+				<option value="Thu">Thursday</option>
+				<option value="Fri">Friday</option>
+			</select>
+		</div>
+		<div id="entertextdiv">
+			<input id="textbox" type="text"
+				placeholder="Enter your keyword here..."
+				onkeypress="if(event.keyCode==13) {search(); return false;}">
+		</div>
+		<input type="button" id="DelBtn" value="Delete" onClick="Alldelete()">
+	</header>
+
+
+
+	<!-- 추가 -->
+	<div id="writingTransparentBorder"></div>
+	<!-- Add ToDo Button View -->
+	<div id="writingFormContainer">
+		<!-- X버튼 -->
+		<img id="XBtn" src="img/delete.png" onclick="clickX()" alt="X">
+		<!-- day, Item, Contents 묶어주기 -->
+		<div id="ATDdiv">
+			<select name="day" id="addDay">
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+			</select> <input type="text" name="title" id="addTitle" placeholder="제목">
+			<textarea name="contents" id="addContents" placeholder="내용"></textarea>
+		</div>
+		<input type="button" id="ATDAddBtn" value="Add" onclick="clickAdd()">
+	</div>
+
+
+
+	<!-- 수정 -->
+	<div id="writingTransparentBorder1"></div>
+	<!-- Add ToDo Button View -->
+	<div id="writingFormContainer1">
+		<!-- X버튼 -->
+		<img id="XBtn1" src="img/delete.png" alt="X">
+		<!-- day, Item, Contents 묶어주기 -->
+		<div id="Revdiv">
+			수정할 제목: <input id="RevTitle" type="text"><br> 수정할 내용:
+			<textarea id="RevContents"></textarea>
+		</div>
+		<input id="DoneBtn" type="button" value="Done">
+	</div>
+
+
+
+	<main> <!-- Middle Bar A~D, Display Area A~D -->
+	<div id="middleBar_mon" class="middle">
+		<div class="middleTop">
+			<b>mon</b>
+		</div>
+		<div class="displayArea_mon">
+			<b>월요일 목록</b>
+			<div id="mondiv">
+				<dl class="id_dl" id="mondl"></dl>
+			</div>
+		</div>
+
+	</div>
+	<!--경계선-->
+	<div class="mainLine"></div>
+
+	<div id="middleBar_tue" class="middle">
+		<div class="middleTop">
+			<b>tue</b>
+		</div>
+		<div class="displayArea_tue">
+			<b>화요일 목록</b>
+			<div id="tuediv">
+				<dl class="id_dl" id="tuedl"></dl>
+			</div>
+		</div>
+	</div>
+	<div class="mainLine"></div>
+
+	<div id="middleBar_wed" class="middle">
+		<div class="middleTop">
+			<b>wed</b>
+		</div>
+		<div class="displayArea_wed">
+			<b>수요일 목록</b>
+			<div id="weddiv">
+				<dl class="id_dl" id="weddl"></dl>
+			</div>
+		</div>
+
+	</div>
+	<div class="mainLine"></div>
+
+	<div id="middleBar_thu" class="middle">
+		<div class="middleTop">
+			<b>thu</b>
+		</div>
+		<div class="displayArea_thu">
+			<b>목요일 목록</b>
+			<div id="thudiv">
+				<dl class="id_dl" id="thudl"></dl>
+			</div>
+		</div>
+
+	</div>
+	<div class="mainLine"></div>
+
+	<div id="middleBar_Fri" class="middle">
+		<div class="middleTop">
+			<b>Fri</b>
+		</div>
+		<div class="displayArea_Fri">
+			<b>금요일 목록</b>
+			<div id="fridiv">
+				<dl class="id_dl" id="fridl"></dl>
+			</div>
+		</div>
+
+	</div>
+
+	</main>
+</body>
+
+</html>

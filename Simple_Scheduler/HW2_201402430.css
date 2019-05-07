@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+html{
+	height: 100%;
+}
+
+body{
+	background-color: #ffffff;
+	height: 100%;
+	width: 900px;
+	border: 1px solid;
+	margin: auto;
+	padding: 20px 30px 20px 30px;
+}
+
+#AddBtn{
+	border:3px;
+	border-radius: 10px;
+	font-weight:bold;
+	font-size: 20px;
+	width: 120px;
+	height: 40px;
+	float: left;
+	background-color: rgb(246, 240, 165);
+	cursor: pointer;
+}
+
+#DelBtn{
+	border:3px;
+	border-radius: 10px;
+	font-weight:bold;
+	font-size: 20px;
+	width: 110px;
+	height: 40px;
+	float: right;
+	background-color: red;
+	cursor: pointer;
+}
+
+#writingFormContainer{
+	background-color: #ffffff;
+	width: 400px;
+	height: 200px;
+	margin: 100px 250px;
+	position: absolute;
+	z-index: 3;
+	display: none;
+}
+
+#writingTransparentBorder
+{
+	background-color: #000000;
+	height: 100%;
+	width: 900px;
+	margin: 0;
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2;
+	display: none;
+}
+
+
+/*x버튼*/
+#writingFormContainer img{
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin: 5px 5px;
+	display: none;
+}
+
+/*day*/
+#daylist{
+	font-size: 20px;
+	border-radius: 5px;
+	height: 30px;
+	float: right;
+	margin: 5px;
+	/* position: relative;
+	right: 20px;
+	bottom:10px; */
+}
+
+#daylistdiv{
+display: inline-block;
+position: relative; left: 130px;
+}
+
+#textbox{
+	padding: 3px;
+	height: 22px;
+	font-size:10px;
+	border:1px;
+	border-radius: 2px;
+	float: right;
+}
+
+#entertextdiv{
+	height: 20px;
+	display: inline-block;
+	position: relative; left: 150px;
+}
+
+#addDay{
+	height: 20px;
+	width: 300px;
+	font-size: 13px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+#addTitle{
+	height: 20px;
+	width: 295px;
+	font-size: 13px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+#addContents{
+	height: 70px;
+	width: 293px;
+	font-size: 13px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+#ATDdiv{
+	margin: 0 auto;
+	margin-left : 50px;
+	margin-top: 23px;
+}
+
+#ATDAddBtn{
+	float:right;
+	margin-right: 50px;
+	margin-top:5px;
+	height: 25px;
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	border: 1px;
+	border-radius: 4px;
+	background-color: rgb(124, 124, 124);
+}
+
+/*수정 시작*/
+
+#Revdiv{
+	margin: 0 auto;
+	margin-left : 50px;
+	margin-top: 23px;
+}
+
+#Revlist{
+	font-size: 20px;
+	border-radius: 5px;
+	height: 30px;
+}
+
+
+
+/* #textbox{
+	padding: 3px;
+	height: 22px;
+	font-size:15px;
+	border:1px;
+	border-radius: 2px;
+} */
+
+
+
+#priority{
+	height: 20px;
+	width: 295px;
+	font-size: 13px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+#RevDay{
+	height: 20px;
+	width: 300px;
+	font-size: 13px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+#RevTitle{
+	height: 20px;
+	width: 295px;
+	font-size: 13px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+#RevContents{
+	height: 70px;
+	width: 293px;
+	font-size: 13px;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+#writingFormContainer1{
+	background-color: #ffffff;
+	width: 400px;
+	height: 250px;
+	margin: 100px 250px;
+	position: absolute;
+	z-index: 3;
+	display: none;
+}
+
+#writingTransparentBorder1{
+	background-color: #000000;
+	height: 100%;
+	width: 900px;
+	margin: 0;
+	position: absolute;
+	opacity: 0.5;
+	z-index: 2;
+	display: none;
+}
+
+#writingFormContainer1 img{
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin: 5px 5px;
+	display: none;
+}
+
+#DoneBtn{
+	float:right;
+	margin-right: 50px;
+	margin-top:5px;
+	height: 25px;
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+	border: 1px;
+	border-radius: 4px;
+	background-color: rgb(124, 124, 124);
+}
+
+/*수정 끝*/
+
+#fence{
+	background-color: #ffffff;
+	height: 100%;
+	border-style: none;
+}
+
+/* Header Start */
+header{
+	background-color: #ffc000;
+	line-height:60px;
+	height: 40px;
+	width: 800px;
+	border: 1px solid;
+	border-radius: 10px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+/* Header End */
+
+/* Main Start */
+main{
+	background-color: #ffffff;
+	height: 90%;
+	width: 800px;
+	margin: auto;
+	padding: 10px;
+}
+
+.middle{
+	float: left;
+	height: 98%;
+	width: 18%;
+	margin: 7px;
+}
+
+.middleTop{
+	line-height:50px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+
+.displayArea_mon{
+	background-color: #cfe0e0;
+	height: 95%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.displayArea_tue{
+	background-color: #e9b7b7;
+	height: 95%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.displayArea_wed{
+	background-color: #cce0e0;
+	height: 95%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.displayArea_thu{
+	background-color: #e2ddc0;
+	height: 95%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.displayArea_Fri{
+	background-color: skyblue;
+	height: 95%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mainLine{
+	float: left;
+	height: 100%;
+	border-right: 1px solid;
+}
+
+.id_dl{
+	list-style-type: none;
+}
+#mondiv,
+#tuediv,
+#weddiv,
+#thudiv,
+#fridiv,
+dl{
+	height:100%;
+}
+/* Main End */
